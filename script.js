@@ -1,5 +1,6 @@
 // ===== DOM READY =====
 document.addEventListener('DOMContentLoaded', () => {
+  initSplashScreen();
   initNavbar();
   initMobileMenu();
   initScrollReveal();
@@ -7,6 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackToTop();
   initHeroWordCycle();
 });
+
+// ===== SPLASH SCREEN =====
+function initSplashScreen() {
+  const splash = document.getElementById('splashScreen');
+  if (!splash) return;
+
+  // Add class to prevent scrolling during splash
+  document.body.classList.add('splash-active');
+
+  // Fade out splash after 3 seconds
+  setTimeout(() => {
+    splash.classList.add('hidden');
+    document.body.classList.remove('splash-active');
+  }, 3000);
+}
 
 // ===== NAVBAR SCROLL =====
 function initNavbar() {
