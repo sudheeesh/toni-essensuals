@@ -274,14 +274,16 @@ body.splash-active {
 }
 
 .nav-logo-img {
-  height: 45px;
+  height: 85px;
   width: auto;
   display: block;
   transition: var(--transition);
+  margin: -20px 0;
 }
 
 .navbar.scrolled .nav-logo-img {
-  height: 38px;
+  height: 65px;
+  margin: -10px 0;
 }
 
 .nav-links {
