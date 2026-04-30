@@ -226,16 +226,27 @@ button {
 }
 
 @keyframes drawLine {
-  to { width: 100%; }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeIn {
-  to { opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
 body.splash-active {
@@ -274,7 +285,7 @@ body.splash-active {
 }
 
 .nav-logo-img {
-  height: 110px;
+  height: 140px;
   width: auto;
   display: block;
   transition: var(--transition);
@@ -791,7 +802,8 @@ body.splash-active {
   position: relative;
   width: 100%;
   margin-top: 50px;
-  padding: 10px 0; /* Add padding to prevent box-shadow clipping */
+  padding: 10px 0;
+  /* Add padding to prevent box-shadow clipping */
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
@@ -808,7 +820,8 @@ body.splash-active {
 }
 
 .testimonial-card {
-  width: 380px; /* Fixed width for the cards in the marquee */
+  width: 380px;
+  /* Fixed width for the cards in the marquee */
   flex-shrink: 0;
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -868,6 +881,7 @@ body.splash-active {
   0% {
     transform: translateX(0);
   }
+
   100% {
     /* 6 cards * 380px width + 6 gaps * 24px = 2280 + 144 = 2424px. So we translate by exactly half of the total track width to create a seamless loop. */
     transform: translateX(calc(-50% - 12px));
@@ -1490,6 +1504,7 @@ body.splash-active {
     width: 280px;
     padding: 20px;
   }
+
   .testimonial-card p {
     font-size: 0.88rem;
   }
