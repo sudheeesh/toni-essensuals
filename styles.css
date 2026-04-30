@@ -209,7 +209,7 @@ button {
 }
 
 .splash-logo-img {
-  max-width: 280px;
+  max-width: 350px;
   height: auto;
   opacity: 0;
   animation: fadeUp 1s ease forwards 0.4s;
@@ -274,7 +274,7 @@ body.splash-active {
 }
 
 .nav-logo-img {
-  height: 85px;
+  height: 110px;
   width: auto;
   display: block;
   transition: var(--transition);
@@ -282,7 +282,7 @@ body.splash-active {
 }
 
 .navbar.scrolled .nav-logo-img {
-  height: 65px;
+  height: 85px;
   margin: -10px 0;
 }
 
